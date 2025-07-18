@@ -28,8 +28,8 @@ Time Complexity: O(n log n)
 Space Complexity: O(n)
 
 Code (Python 3)
-import heapq
 
+import heapq
 class Solution:
     def minimumDifference(self, nums):
         n = len(nums) // 3
