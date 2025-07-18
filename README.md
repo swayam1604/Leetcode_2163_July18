@@ -22,14 +22,18 @@ This problem requires a clever use of **prefix and suffix heaps** to track minim
   diff = left_prefix[i] - right_suffix[i + 1]
 Return the minimum difference found among all valid split points.
 
-🧮 Time & Space Complexity:
-Time Complexity: O(n log n)
+## 🧮 Time & Space Complexity:
 
-Space Complexity: O(n)
+- **Time Complexity:** O(n log n)  
+- **Space Complexity:** O(n)
 
-Code (Python 3)
+---
 
+## 💻 Code (Python 3)
+
+```python
 import heapq
+
 class Solution:
     def minimumDifference(self, nums):
         n = len(nums) // 3
@@ -65,9 +69,7 @@ class Solution:
         min_diff = float('inf')
         for i in range(n - 1, 2 * n):
             diff = left_prefix[i] - right_suffix[i + 1]
-            min_diff = min(min_diff, diff)
-
-        return min_diff
+            min_diff = min(mi_
 
 
 Contributed by: Swayam Sharma
